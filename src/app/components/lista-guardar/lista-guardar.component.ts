@@ -12,18 +12,25 @@ export class ListaGuardarComponent implements OnInit {
   nota:any ={
     textoNota: ''
   }
+  vacio=false;
   constructor(private servicio:ConexionService) {
 
-   }
+  }
 
+
+  
   ngOnInit(): void {
   }
   agregar(){
     if(this.nota.textoNota==""){
-      alert('Agregue un nota válida');
+      this.vacio = true;
     }else{
+      this.vacio = false;
       this.servicio.agregarNota(this.nota);
       this.nota.textoNota="";
     }
+  }
+  cambiarClase(){
+    this.vacio = false;
   }
 }

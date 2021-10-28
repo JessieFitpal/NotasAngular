@@ -3,7 +3,7 @@
     <p>Mis notas</p>
     <div class="wrap">
         <form class="formulario" (ngSubmit)="agregar()">
-            <input type="text" id="tareaInput" placeholder="Agrega tu tarea" name="textoNota"
+            <input (click)='cambiarClase()' [ngClass]="{'textError': vacio, 'text': !vacio}" type="text" id="tareaInput" placeholder="Agrega tu tarea" name="textoNota"
             [(ngModel)]="nota.textoNota" >
             <input type="submit" class="boton" value="Agregar Tarea">
         </form>

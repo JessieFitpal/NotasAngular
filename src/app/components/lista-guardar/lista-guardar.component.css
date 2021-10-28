@@ -21,18 +21,24 @@
 	text-align: center;
 }
 
-.principal .formulario input[type=text] {
+.text {
 	margin-bottom: 20px;
 	padding:10px 25px;
-	width: 100%;
+	width: 80%;
 	border-radius: 15px;
 	border:none;
 }
 
-.principal .formulario input[type=text].error {
-	border: 5px solid #D32F2F;
-	color: red;
+.textError {
+	margin-bottom: 20px;
+	padding:10px 25px;
+	width: 80%;
 	border-radius: 15px;
+	border: 2px solid #D32F2F;
+	border-radius: 15px;
+}
+.textError::placeholder{
+	color: red;
 }
 
 .principal .formulario .boton:hover {
