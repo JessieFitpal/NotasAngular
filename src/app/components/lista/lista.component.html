@@ -1,0 +1,7 @@
+<div class="tareas">
+  <div class="wrap">
+    <ul class="lista" id="lista">
+      <li *ngFor="let nota of notas"><a (click)="eliminar(nota)">{{nota.textoNota}}</a></li>
+    </ul>
+  </div>
+</div>

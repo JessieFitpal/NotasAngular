@@ -1,0 +1,25 @@
+/* -Tareas- */
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+
+.tareas .lista {
+	list-style: none;
+}
+
+.tareas .lista li {
+	border-bottom: 1px solid #B6B6B6;
+}
+
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+.tareas .lista li a:hover {
+	text-decoration: line-through;
+}

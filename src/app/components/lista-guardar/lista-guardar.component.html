@@ -1,0 +1,11 @@
+
+<div class="principal">
+    <p>Mis notas</p>
+    <div class="wrap">
+        <form class="formulario" (ngSubmit)="agregar()">
+            <input type="text" id="tareaInput" placeholder="Agrega tu tarea" name="textoNota"
+            [(ngModel)]="nota.textoNota" >
+            <input type="submit" class="boton" value="Agregar Tarea">
+        </form>
+    </div>
+</div>
