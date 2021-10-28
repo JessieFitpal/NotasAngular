@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "notasAngular:build:production",
+            "firebaseProject": "notasangular-732b2",
+            "firebaseHostingSite": "notasangular-732b2"
+          }
         }
       }
     }

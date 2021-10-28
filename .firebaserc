@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "notasangular-732b2": {
+      "hosting": {
+        "notasAngular": [
+          "notasangular-732b2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "notasangular-732b2"
+  }
+}
